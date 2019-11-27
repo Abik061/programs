@@ -1,3 +1,4 @@
+// To check if the number given by user is prime or composite.
 #include<iostream>
 
 using namespace std;

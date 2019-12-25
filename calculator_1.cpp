@@ -1,6 +1,7 @@
 // A simple calculator.
 
 #include<iostream>
+#include<cmath>
 
 using namespace std;
 
@@ -37,6 +38,12 @@ void rem(int num1, int num2)
     re = num1 % num2;
     cout << "Ans: " << re << endl;
 }
+void powr(float num1, float num2)
+{
+    float pr;
+    pr = pow(num1,num2);
+    cout << "Ans: " << pr << endl;
+}
 
 int main()
 {
@@ -45,7 +52,7 @@ int main()
     cout << "First number : ";
     cin >> a;
 
-    cout << "Operator(+,-,/,*,%) : ";
+    cout << "Operator(+,-,/,*,%,^) : ";
     cin >> op;
 
     cout << "Second number : ";
@@ -71,6 +78,10 @@ int main()
 
         case '%':
             rem(a,b);
+        break;
+
+        case '^':
+            powr(a,b);
         break;
 
         default:
